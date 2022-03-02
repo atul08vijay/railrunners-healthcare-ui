@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RailrunnersHealthcareDoctorRegisterComponent implements OnInit {
 
+  User: any = ['Dr', 'MBBS', 'Orthopedic'];
   constructor() { }
 
   ngOnInit(): void {
