@@ -1,14 +1,10 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<div>
-  <app-railrunners-healthcare-login></app-railrunners-healthcare-login>
-</div>
-
+<mat-toolbar color="primary" class="app-header">
+  <!--<div><a href="#" target="_blank" class="positronx">Demo</a></div> -->
+  <span class="nav-tool-items">
+    <a mat-button routerLink="login" routerLinkActive="active">Login</a>
+    <a mat-button mat-raised-button routerLink="registerPatient" routerLinkActive="active">Register Patient</a>
+    <a mat-button mat-raised-button routerLink="registerDoctor" routerLinkActive="active">Register Doctor</a>
+  </span>
+</mat-toolbar>
 <router-outlet></router-outlet>
