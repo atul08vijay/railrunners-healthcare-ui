@@ -10,6 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RailrunnersHealthcarePatientRegisterComponent } from './ui-component/railrunners-healthcare-patient-register/railrunners-healthcare-patient-register.component';
 import { RailrunnersHealthcareDoctorRegisterComponent } from './ui-component/railrunners-healthcare-doctor-register/railrunners-healthcare-doctor-register.component';
+import { RailrunnersHealthcareForgotPasswordComponent } from './ui-component/railrunners-healthcare-forgot-password/railrunners-healthcare-forgot-password.component';
 
  
 
@@ -18,7 +19,8 @@ import { RailrunnersHealthcareDoctorRegisterComponent } from './ui-component/rai
     AppComponent,
     RailrunnersHealthcareLoginComponent,
     RailrunnersHealthcarePatientRegisterComponent,
-    RailrunnersHealthcareDoctorRegisterComponent
+    RailrunnersHealthcareDoctorRegisterComponent,
+    RailrunnersHealthcareForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
