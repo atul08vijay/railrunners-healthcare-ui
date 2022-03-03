@@ -12,4 +12,8 @@ export class RailrunnersHealthcareLoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(){
+    
+  }
+
 }
