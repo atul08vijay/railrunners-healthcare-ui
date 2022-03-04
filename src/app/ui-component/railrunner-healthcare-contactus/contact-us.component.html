@@ -1,0 +1,49 @@
+<body class="bg-success p-2 text-dark bg-opacity-10">
+<section class="text-muted">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Contact Us</h1>
+        </div>
+    </div>
+</section>
+<br>
+<section class="section">
+    <div class="container">
+        <form [formGroup]="contactForm" (submit)="send()">
+            <div class="mb-3">
+                <label class="form-label">Name<span class="color">*</span></label>
+                <input type="text" class="form-control" name="name" placeholder="name" formControlName="name" id="name" required>
+                <div *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="">
+                    <div *ngIf="name?.errors?.['required']">Name is required</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address<span class="color">*</span></label>
+                <input type="email" class="form-control" name="email" placeholder="name@example.com" formControlName="email" required>
+                <div *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="">
+                    <div *ngIf="email?.errors?.['required']">Email is required</div>
+                    <div *ngIf="email?.errors?.['pattern']">Email is invalid</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone no.<span class="color">*</span></label>
+                <input type="number" class="form-control" name="phone" placeholder="phone no." formControlName="phone" required>
+                <div *ngIf="phone?.invalid && (phone?.dirty || phone?.touched)" class="">
+                    <div *ngIf="phone?.errors?.['required']">Phone is required</div>
+                </div>
+            </div>
+              <div class="mb-3">
+                <label for="body" class="form-label">Your message<span class="color">*</span></label>
+                <textarea class="form-control" id="body" rows="3" name="message" formControlName="message" required></textarea>
+                <div *ngIf="message?.invalid && (message?.dirty || message?.touched)" class="">
+                    <div *ngIf="message?.errors?.['required']">Message is required</div>
+                </div>
+              </div>
+            <div>
+                <button type="submit" class="btn btn-success" [disabled]="contactForm.invalid">Send Message</button><br><br>
+                <button type="submit" class="btn btn-warning" [routerLink]="'/feedback-form'">Feedback</button>
+            </div>
+        </form>
+    </div>    
+</section>
+</body>
