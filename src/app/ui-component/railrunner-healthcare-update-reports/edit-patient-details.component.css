@@ -1,0 +1,55 @@
+body {
+  background-color:#bdbebe;
+  border-top: 8px double black;
+  border-bottom: 8px double black;
+  border-left: 8px double black;
+  border-right: 8px double black;
+  font: 300 1em 'Fira Sans', sans-serif;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  
+}
+input[type=text], select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  box-sizing: border-box;
+}
+
+input[type=file],select{
+  
+  padding: 6px 10px;
+  margin: 5px 0;
+  border-radius: 2rem;
+  box-sizing: border-box;
+}
+
+.button
+{
+border-radius: 12px;
+}

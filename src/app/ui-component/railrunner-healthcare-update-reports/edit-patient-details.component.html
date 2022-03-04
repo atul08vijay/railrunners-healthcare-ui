@@ -1,0 +1,29 @@
+<body><br>
+  <div class="con">
+    <form>
+      <h3>Update Patient Details</h3>
+      <h5>(All fields marked with <span style="color: red;">*</span> are mandatory to fill)</h5>
+      <label for="pId"><b>Patient Id : </b></label>
+      <input type="text" name="pId" value="1" required><br>
+      <br>
+      <label for="name"><b>Patient Name <span style="color: red;">*</span> : </b></label>
+      <input type="text" placeholder="Enter name" name="pname" value="Shruti" required><br>
+      <br>
+      <label for="pAdd"><b>Patient Address <span style="color: red;">*</span> :</b></label>
+      <input type="text" placeholder="Enter address " name="padd"  value="Tirora" required><br>
+      <br>
+      <label for="email"><b>Email Id <span style="color: red;">*</span> : </b></label>
+      <input type="email" [pattern]="'^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'" placeholder="Enter email id"
+      value="shruti@mail.com" name="email"  required><br>
+      <br>
+      <label for="myfile"><b>Upload reports<span style="color: red;">*</span> :</b></label>
+      <input type="file" id="myfile" name="myfile" multiple required><br><br>
+    
+      <button class="button" id="submit" (click)="Update()"><b>Update</b></button><br><br>
+      <button class="button" type="reset" value="Reset"><b>Reset</b></button><br><br>
+      <button class="button" [routerLink]="''"><b>Back</b></button><br><br>
+    </form>
+  </div>
+</body>
+
+
