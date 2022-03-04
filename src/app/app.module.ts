@@ -11,6 +11,7 @@ import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RailrunnersHealthcarePatientRegisterComponent } from './ui-component/railrunners-healthcare-patient-register/railrunners-healthcare-patient-register.component';
 import { RailrunnersHealthcareDoctorRegisterComponent } from './ui-component/railrunners-healthcare-doctor-register/railrunners-healthcare-doctor-register.component';
 import { RailrunnersHealthcareForgotPasswordComponent } from './ui-component/railrunners-healthcare-forgot-password/railrunners-healthcare-forgot-password.component';
+import { FeedbackFormComponent } from './ui-component/feedback-form/feedback-form.component';
 
  
 
@@ -20,7 +21,8 @@ import { RailrunnersHealthcareForgotPasswordComponent } from './ui-component/rai
     RailrunnersHealthcareLoginComponent,
     RailrunnersHealthcarePatientRegisterComponent,
     RailrunnersHealthcareDoctorRegisterComponent,
-    RailrunnersHealthcareForgotPasswordComponent
+    RailrunnersHealthcareForgotPasswordComponent,
+    FeedbackFormComponent
   ],
   imports: [
     BrowserModule,
